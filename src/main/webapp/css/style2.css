@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "SGS";
+	src: url(../polices/SketchGothicSchool.ttf) format("trueType");
+}
+
+@font-face {
+	font-family: "firstOrder";
+	src: url(../polices/firstorder.ttf) format("trueType");
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing : border-box;
+}
+
+body {
+	background-color: brown;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	font-family: courier;
+}
+
+header {
+	position : sticky;
+	top: 0;
+	background-image: url("../media/banniere.png");
+}
+
+h1 {
+	font-family: "firstOrder";
+	text-align: center;
+	font-style: normal;
+}
+
+section {
+	flex: auto;
+	padding: 2em;
+	display: flex;
+	margin-left: 3em;
+	margin-right: 2em;
+}
+
+.statsbox {
+	flex: 2;
+		
+}
+
+.stats {
+
+	width: 350px;
+	height: 100%;
+	padding-top: 23px;
+	background-image: url("../media/parcheminCachete.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+}
+
+.statsinfos {
+	padding-left: 100px;
+	padding-top: 25px;
+	padding-right: 30px;
+}
+
+.pagebox {
+	flex: 5;
+}
+
+.page {
+	background-image: url("../media/fondCarte.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	margin-left: 6em;
+	margin-right: 5em;
+	padding: 6em;
+	/*padding-right: 8em;
+	width: 600px;*/
+	padding-top: 3em;
+	
+	
+	
+}
+
+h2 {
+	text-align: center;
+	font-family: "SGS";
+	font-size: 30px;
+}
+
+footer {
+	position: sticky;
+	bottom:0;
+	text-align: center;
+	width: 100%;
+	background-color: #E8E4D4;
+	align-self: flex-end;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 3em;
+}
+
+input  {
+	margin: 1em;
+}

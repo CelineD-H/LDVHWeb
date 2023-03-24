@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "SGS";
+	src: url(../polices/SketchGothicSchool.ttf) format("trueType");
+}
+
+@font-face {
+	font-family: "firstOrder";
+	src: url(../polices/firstorder.ttf) format("trueType");
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing : border-box;
+}
+
+body {
+	background-color: brown;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: courier;
+}
+
+header {
+	position : sticky;
+	top: 0;
+	background-color: brown;
+	padding: 1em;
+	padding-bottom: 2em;	
+}
+
+h1 {
+	font-family: "firstOrder";
+	text-align: center;
+	font-style: normal;
+}
+
+a {
+	color: black;
+}
+section {
+	flex: auto;
+	margin-left: 3em;
+	margin-right: 2em;
+	display: flex;
+}
+
+.statsbox {
+	flex: 2;
+		
+}
+
+.stats {
+	
+	width: 325px;
+	height: 330px;
+	padding-top: 23px;
+	background-image: url("../media/parcheminCachete.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+/* 	margin-top: -75px;
+  	z-index: 30;
+  	position: fixed; */
+}
+
+.statsinfos {
+	font-family: "firstOrder";
+	font-size: 24px;
+	line-height: 30px;
+	padding-left: 100px;
+	/*padding-top: 25px;*/
+	padding-right: 30px;
+}
+
+.besace {
+	background-image: url("../media/parcheminCachete.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 325px;
+	padding-top: 23px;
+}
+
+.besace h2 {
+	padding-bottom: 8px;
+}
+
+.content {
+    text-align: justify;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: padding 1s ease;
+    transition: height 1s ease;
+}
+
+.affiche {
+    height: 300px;
+/*     overflow: visible; */
+}
+
+.pagebox {
+	flex: 5;
+}
+
+.page {
+	background-image: url("../media/fondCarte.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-left: 6em;
+	margin-right: 5em;
+	padding: 6em;
+	padding-top: 2em;
+	height: 100%;
+}
+.connexion {
+	margin: auto;
+	background-image: url("../media/fondCarte.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 6em;
+	height: 100%;
+}
+
+h2 {
+	text-align: center;
+	font-family: "SGS";
+	font-size: 30px;
+	padding-bottom: 25px;
+}
+
+footer {
+	position: sticky;
+	bottom:0;
+	text-align: center;
+	width: 100%;
+	background-color: #E8E4D4;
+	align-self: flex-end;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 3em;
+}
+
+input  {
+	margin: 1em;
+}
